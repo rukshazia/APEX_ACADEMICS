@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-900: #26364A;
+  --color-navy-800: #34465A;
+  --color-navy-700: #45586E;
+  --color-navy-600: #566B83;
+
+  --color-brand-blue: #647F9E;
+  --color-brand-sage: #8CA398;
+  --color-brand-dusty: #91A6BA;
+  --color-brand-taupe: #B7A99A;
+
+  --color-bg-main: #F5F5F2;
+  --color-bg-secondary: #EEEFEB;
+  --color-bg-card: #FFFFFF;
+  --color-bg-highlight: #F0F2F1;
+
+  --color-txt-primary: #303A46;
+  --color-txt-secondary: #68727D;
+  --color-txt-muted: #89919A;
+
+  --color-brd: #E1E4E2;
+  --color-brd-subtle: #EAEBE8;
+
+  --color-status-success: #648773;
+  --color-status-warning: #B69A65;
+  --color-status-danger: #B87575;
+  --color-status-info: #718CA5;
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --shadow-subtle: 0 1px 3px 0 rgba(38, 54, 74, 0.05), 0 1px 2px 0 rgba(38, 54, 74, 0.03);
+  --shadow-card: 0 2px 6px -1px rgba(38, 54, 74, 0.06), 0 2px 4px -2px rgba(38, 54, 74, 0.04);
+}
+
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid #E1E4E2;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #F5F5F2;
+    color: #303A46;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  input, select, textarea, button {
+    font-family: inherit;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EEEFEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4CAD0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A0ABB5;
+}
